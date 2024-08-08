@@ -59,8 +59,6 @@ button {
 }
 
 /************************* LEFT-SECTION-CONTACTS *************************/
-#contacts-frame-wrapper {}
-
 #contacts-frame {
   box-sizing: border-box;
   position: relative;
@@ -152,9 +150,6 @@ button {
 }
 
 /************************* LEFT-SECTION-CONTACT-FRAME *************************/
-/* .contacts-wrapper{
-  height: 100vh;
-} */
 
 .contact-frame {
   display: flex;
