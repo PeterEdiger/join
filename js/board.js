@@ -147,10 +147,10 @@ function buttonForEditTaskCard(tasks) {
         case './assets/img/board/prio_red.png':
             changeBtnColor('red');
             break;
-        case './assets/img/board/Prio-yellow.png':
+        case './assets/img/board/prio_yellow.png':
             changeBtnColor('yellow');
             break;
-        case './assets/img/board/Prio-green.png':
+        case './assets/img/board/prio_green.png':
             changeBtnColor('green');
             break;
         default:
