@@ -95,17 +95,16 @@ function priorityText(priority) {
 }
 
 
-// Funktion für addTask um Category auszuwählen
 function showTaskSelect(selectedOption) {
     let taskSelectCategory = document.getElementById("task-select-category");
     let arrowDownImg = document.getElementById("arrow_down");
     let arrowUpImg = document.getElementById("arrow_up");
     let taskCategoryInput = document.getElementById("task-category-input");
 
-    let isVisible = !taskSelectCategory.classList.contains("d-none"); // Überprüfe, ob der Container bereits sichtbar ist
-    taskSelectCategory.classList.toggle("d-none"); // Füge oder entferne die 'd-none'-Klasse basierend auf dem aktuellen Zustand
+    let isVisible = !taskSelectCategory.classList.contains("d-none"); 
+    taskSelectCategory.classList.toggle("d-none"); 
 
-    // Füge oder entferne die 'd-none'-Klasse für die Pfeilbilder
+
     arrowDownImg.classList.toggle("d-none", !isVisible);
     arrowUpImg.classList.toggle("d-none", isVisible);
 
