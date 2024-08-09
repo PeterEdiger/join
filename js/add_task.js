@@ -11,6 +11,8 @@ async function init() {
     tasks = JSON.parse(await getItem("board_key"));
 }
 
+//change 1
+
 function updateHTML() {
     setupClearButton();
     showDateOnInput();
