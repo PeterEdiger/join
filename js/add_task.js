@@ -8,12 +8,12 @@ async function init() {
     includeHTML();
     updateHTML();
     loadAll();
-    tasks =  JSON.parse(await getItem("board_key")) 
+    tasks = JSON.parse(await getItem("board_key"));
 }
 
 function updateHTML() {
     setupClearButton();
-    showDateOnInput()
+    showDateOnInput();
 }
 
 async function createTask(event) {
@@ -101,15 +101,15 @@ function showTaskSelect(selectedOption) {
     let arrowUpImg = document.getElementById("arrow_up");
     let taskCategoryInput = document.getElementById("task-category-input");
 
-    let isVisible = !taskSelectCategory.classList.contains("d-none"); 
-    taskSelectCategory.classList.toggle("d-none"); 
+    let isVisible = !taskSelectCategory.classList.contains("d-none");
+    taskSelectCategory.classList.toggle("d-none");
 
 
     arrowDownImg.classList.toggle("d-none", !isVisible);
     arrowUpImg.classList.toggle("d-none", isVisible);
 
-    let selectedText = selectedOption ? selectedOption.innerText : ""; // Extrahiere den ausgewählten Text aus dem angeklickten Element
-    taskCategoryInput.value = selectedText; // Setze den ausgewählten Text in die Input-Fläche
+    let selectedText = selectedOption ? selectedOption.innerText : ""; 
+    taskCategoryInput.value = selectedText; 
 }
 
 // Funtion damit man einzelne subtasks eingeben und anzeigen kann
