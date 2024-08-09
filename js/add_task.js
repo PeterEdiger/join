@@ -112,7 +112,6 @@ function showTaskSelect(selectedOption) {
     taskCategoryInput.value = selectedText; 
 }
 
-// Funtion damit man einzelne subtasks eingeben und anzeigen kann
 function addSubtask() {
     let inputSubtasks = document.getElementById("input-subtasks");
     let subtaskUL = document.getElementById("unsorted-list");
