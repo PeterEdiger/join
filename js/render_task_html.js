@@ -4,14 +4,14 @@
  * @returns 
  */
 function renderEditSubtasks(subtask) {
-    return `
+  return `
     <div id="${subtask.id}" class="full-subtasks-area">
         <li>${subtask.title}</li>
         <div id="subtasksGreyImgs-${subtask.id}" class="subtask-edit-imgs d-none">
             <img src="./assets/img/board/editforSubtask.png" class="subtask-img" onclick="editSubtask('${subtask.id}')">
             <img src="./assets/img/board/trashforsubtasks.png" class="subtask-img" onclick="deleteSubtask('${subtask.id}')">
         </div>
-    </div>`
+    </div>`;
 }
 
 
@@ -25,7 +25,7 @@ function renderEditSubtasks(subtask) {
  * @returns 
  */
 function renderEditCard(task, taskId, iconContact, subtaskListHTML) {
-    return `
+  return `
     <div class="completeCard">
         <div class="right-end">
             <img class="task-close-X" src="./assets/img/board/close.png" onclick="closeEditTask()">
@@ -84,12 +84,12 @@ function renderEditCard(task, taskId, iconContact, subtaskListHTML) {
         <div class="right-end">
             <button class="edit-card-btn" onclick="saveEditedTask(${taskId})">Ok<img src="./assets/img/board/footerCheckBtn.png"></button>
         </div>
-    </div>`
+    </div>`;
 }
 
 
-function taskWithProgressbar(element, iconsHTML){
-    return `
+function taskWithProgressbar(element, iconsHTML) {
+  return `
     <div data-id="${element.id}" draggable="true" ondragstart="startDragging(${element.id})" class="task" onclick="openTaskCard(${element.id})">
         <div>
             <img src="${element.category}">
@@ -112,8 +112,8 @@ function taskWithProgressbar(element, iconsHTML){
 }
 
 
-function taskWithoutProgressbar(element, iconsHTML){
-    return `
+function taskWithoutProgressbar(element, iconsHTML) {
+  return `
             <div data-id="${element.id}" draggable="true" ondragstart="startDragging(${element.id})" class="task" onclick="openTaskCard(${element.id})">
                 <div>
                     <img src="${element.category}">
@@ -142,11 +142,11 @@ function taskWithoutProgressbar(element, iconsHTML){
  * @returns 
  */
 function renderCheckIMG(subtask, subtaskIndex, element) {
-    return `
+  return `
     <div class="subtask-card">
         <img id="subtask-checkbox" class="subtask-image" src="${subtask.checked ? './assets/img/board/checkedForCard.png' : './assets/img/board/checkForCard.png'}" onclick="toggleSubtask(this, ${element.id}, ${subtaskIndex})">
         <p>${subtask.title}</p>
-    </div>`
+    </div>`;
 }
 
 
@@ -159,7 +159,7 @@ function renderCheckIMG(subtask, subtaskIndex, element) {
  * @returns 
  */
 function renderTaskCard(element, combinedHTMLString, subtaskHTML) {
-    return `
+  return `
     <div class="completeCard">
         <div class="taskcard-head">
             <img class="card-category-img" src="${element.category}">
@@ -199,7 +199,7 @@ function renderTaskCard(element, combinedHTMLString, subtaskHTML) {
                 <p>Edit</p>
             </div>
         </div>
-    </div>`
+    </div>`;
 }
 
 
@@ -209,14 +209,14 @@ function renderTaskCard(element, combinedHTMLString, subtaskHTML) {
  * @param {number} subtaskID - subtasks individuall id
  * @returns 
  */
-function renderSubtasktData(subtaskText,subtaskID){
-    return `
+function renderSubtasktData(subtaskText, subtaskID) {
+  return `
     <li>${subtaskText}</li>
     <div id="subtasksGreyImgs-${subtaskID}" class="subtask-edit-imgs d-none">
         <img src="./assets/img/board/editforSubtask.png" class="subtask-img" onclick="editSubtask('${subtaskID}')">
         <img src="./assets/img/board/trashforsubtasks.png" class="subtask-img" onclick="deleteSubtask('${subtaskID}')">
     </div>
-`
+`;
 }
 
 
@@ -230,7 +230,7 @@ function renderSubtasktData(subtaskText,subtaskID){
  * @returns 
  */
 function contactFrameHTML(initials, colorNumber, i) {
-    return `
+  return `
     <div class="contact-frame contact-frame${i}">
         <div class="name-circle-wrapper name-in-circle${i}">
             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,12 +253,12 @@ function contactFrameHTML(initials, colorNumber, i) {
  * @returns 
  */
 function renderContactData(selectedClass, contact, imgSrc, initials, colorIndex, i) {
-    return `
+  return `
     <div class="completeContactArea ${selectedClass}" onclick="addContact(this)">
         <div class="contact-info">
             <div class="single-letter">${contactFrameHTML(initials, colorIndex, i)}</div>
             <div class="contact-name">${contact[0]}</div>
         </div>
         <img id="emptyBox" class="empty-check-box" src="${imgSrc}">
-    </div>`
+    </div>`;
 }

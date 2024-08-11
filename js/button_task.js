@@ -44,11 +44,11 @@ function getPriorityImagePath(priority) {
     if (priority === "red") {
         return "./assets/img/board/prio_red.png";
     } else if (priority === "yellow") {
-        return "./assets/img/board/Prio-yellow.png";
+        return "./assets/img/board/prio_yellow.png";
     } else if (priority === "green") {
-        return "./assets/img/board/Prio-green.png";
+        return "./assets/img/board/prio_green.png";
     } else {
-        return "./assets/img/board/Prio-yellow.png";
+        return "./assets/img/board/prio_yellow.png";
     }
 }
 
@@ -82,7 +82,7 @@ function resetRedButton() {
 function resetYellowButton() {
     const yellowImg = document.getElementById("prio-yellow");
     const yellowBtn = document.getElementById("prio-btn-yellow");
-    yellowImg.src = "./assets/img/board/Prio-yellow.png";
+    yellowImg.src = "./assets/img/board/prio_yellow.png";
     yellowBtn.style.backgroundColor = "white";
     yellowBtn.style.color = "black";
     yellowBtn.style.borderColor = "white";
@@ -95,7 +95,7 @@ function resetYellowButton() {
 function resetGreenButton() {
     const greenImg = document.getElementById("prio-green");
     const greenBtn = document.getElementById("prio-btn-green");
-    greenImg.src = "./assets/img/board/Prio-green.png";
+    greenImg.src = "./assets/img/board/prio_green.png";
     greenBtn.style.backgroundColor = "white";
     greenBtn.style.color = "black";
     greenBtn.style.borderColor = "white";
@@ -281,13 +281,13 @@ function colorChangeToYellow() {
     yellowImg = document.getElementById("prio-yellow");
     yellowBtn = document.getElementById("prio-btn-yellow");
 
-    if (yellowImg.src.endsWith("/assets/img/board/Prio-yellow.png")) {
+    if (yellowImg.src.endsWith("/assets/img/board/prio_yellow.png")) {
         yellowImg.src = "./assets/img/board/prio-yellow-white.png";
         yellowBtn.style.backgroundColor = "rgb(255,168,0)";
         yellowBtn.style.color = "white";
         yellowBtn.style.borderColor = "rgb(255,168,0)";
     } else {
-        yellowImg.src = "./assets/img/board/Prio-yellow.png";
+        yellowImg.src = "./assets/img/board/prio_yellow.png";
         yellowBtn.style.backgroundColor = "white";
         yellowBtn.style.color = "black";
         yellowBtn.style.borderColor = "white";
@@ -304,13 +304,13 @@ function colorChangeToGreen() {
     greenImg = document.getElementById("prio-green");
     greenBtn = document.getElementById("prio-btn-green");
 
-    if (greenImg.src.endsWith("/assets/img/board/Prio-green.png")) {
+    if (greenImg.src.endsWith("/assets/img/board/prio_green.png")) {
         greenImg.src = "./assets/img/board/prio-green-white.png";
         greenBtn.style.backgroundColor = "rgb(122,226,40)";
         greenBtn.style.color = "white";
         greenBtn.style.borderColor = "rgb(122,226,40)";
     } else {
-        greenImg.src = "./assets/img/board/Prio-green.png";
+        greenImg.src = "./assets/img/board/prio_green.png";
         greenBtn.style.backgroundColor = "white";
         greenBtn.style.color = "black";
         greenBtn.style.borderColor = "white";
