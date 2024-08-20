@@ -32,10 +32,6 @@ function priorityText(priority) {
 
 
 /**
- * 
- * 
- * 
- * 
  * this function sets the button imgs 
  * urgent is red 
  * medium is yellow

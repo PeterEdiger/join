@@ -241,9 +241,9 @@ function getPriorityImagePath(priority) {
     if (priority === "red") {
         return "/assets/img/board/prio_red.png";
     } else if (priority === "yellow") {
-        return "/assets/img/board/Prio-yellow.png";
+        return "/assets/img/board/prio_yellow.png";
     } else if (priority === "green") {
-        return "/assets/img/board/Prio-green.png";
+        return "/assets/img/board/prio_green.png";
     } else {
         return "/assets/img/board/prio_red.png";
     }
