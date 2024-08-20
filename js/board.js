@@ -16,7 +16,7 @@ async function TaskFromStorage() {
 
 
 /**
- * this is the main function to update the board site
+ * Updates every field
  */
 async function updateHTML() {
     try {
