@@ -70,7 +70,7 @@ function renderEditCard(task, taskId, iconContact, subtaskListHTML) {
             <div class="task-contact-input-area" onclick="changeInputImg()">
                 <input id="input-subtasks" autocomplete="off" type="text" placeholder="Add new subtasks">
                 <img id="subtask-plus-img" class="Assigned-img"
-                    src="./assets/img/board/addTaskAdd.png" alt="plus">
+                    src="./assets/img/board/plus_sign_add_task.png" alt="plus">
                 <div style="display: flex; align-items: center; gap: 8px;">
                     <img id="subtask-close-img" class="Assigned-img-subtask px24 d-none"
                         src="./assets/img/board/close.png" onclick="deleteSubtaskInput()">
