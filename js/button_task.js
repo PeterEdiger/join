@@ -32,7 +32,10 @@ function priorityText(priority) {
 
 
 /**
- * Does the refactoring even work?
+ * 
+ * 
+ * 
+ * 
  * this function sets the button imgs 
  * urgent is red 
  * medium is yellow
@@ -47,7 +50,7 @@ function getPriorityImagePath(priority) {
     } else if (priority === "yellow") {
         return "./assets/img/board/prio_yellow.png";
     } else if (priority === "green") {
-        return "./assets/img/board/Prio-green.png";
+        return "./assets/img/board/prio_green.png";
     } else {
         return "./assets/img/board/prio_yellow.png";
     }
@@ -96,7 +99,7 @@ function resetYellowButton() {
 function resetGreenButton() {
     const greenImg = document.getElementById("prio-green");
     const greenBtn = document.getElementById("prio-btn-green");
-    greenImg.src = "./assets/img/board/Prio-green.png";
+    greenImg.src = "./assets/img/board/prio_green.png";
     greenBtn.style.backgroundColor = "white";
     greenBtn.style.color = "black";
     greenBtn.style.borderColor = "white";
@@ -305,13 +308,13 @@ function colorChangeToGreen() {
     greenImg = document.getElementById("prio-green");
     greenBtn = document.getElementById("prio-btn-green");
 
-    if (greenImg.src.endsWith("/assets/img/board/Prio-green.png")) {
+    if (greenImg.src.endsWith("/assets/img/board/prio_green.png")) {
         greenImg.src = "./assets/img/board/prio-green-white.png";
         greenBtn.style.backgroundColor = "rgb(122,226,40)";
         greenBtn.style.color = "white";
         greenBtn.style.borderColor = "rgb(122,226,40)";
     } else {
-        greenImg.src = "./assets/img/board/Prio-green.png";
+        greenImg.src = "./assets/img/board/prio_green.png";
         greenBtn.style.backgroundColor = "white";
         greenBtn.style.color = "black";
         greenBtn.style.borderColor = "white";
