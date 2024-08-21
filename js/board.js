@@ -16,7 +16,7 @@ async function TaskFromStorage() {
 
 
 /**
- * this is the main function to update the board site
+ * Updates every field
  */
 async function updateHTML() {
     try {
@@ -390,7 +390,7 @@ function createEditedTask(taskIndex) {
     editedTask.title = document.getElementById('task-title-input').value;
     editedTask.description = document.getElementById('description-input').value;
     editedTask.date = document.getElementById('date').value;
-    editedTask.priority = getPriorityImagePath(currentPriority);
+    editedTask.priority =  (currentPriority);
     editedTask.contacts = contactData;
 
     const subtasks = Array.from(document.getElementById('unsorted-list').children).map(subtaskElement => ({
