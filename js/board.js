@@ -7,6 +7,18 @@ function init() {
 
 
 /**
+ * a function to close the task
+ */
+function closeTask() {
+    let taskcard = document.getElementById("full-task-card");
+    taskcard.classList.remove("open");
+    setTimeout(function () {
+        taskcard.classList.add("d-none");
+    }, 500);
+}
+
+
+/**
  * this function is for getting the data information from the remote storage
  */
 async function TaskFromStorage() {
