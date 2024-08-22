@@ -13,7 +13,6 @@ header {
   justify-content: space-between;
 }
 
-
 .join-logo {
   width: 100.03px;
   height: 121.97px;
@@ -34,14 +33,12 @@ header {
     width: 274px;
     height: 334.07px;
   }
-
   to {
     transform: translate(0%, 0%);
     width: 100.03px;
     height: 121.97px;
   }
 }
-
 .fading-animation {
   animation: fading-in 2s;
   opacity: 1;
@@ -51,12 +48,10 @@ header {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 .sign-up {
   display: flex;
   width: 297px;
@@ -65,7 +60,6 @@ header {
   position: relative;
   top: 50px;
 }
-
 
 .sign-up button {
   height: 49px;
@@ -76,7 +70,7 @@ header {
   padding: 15px;
   background-color: rgb(43, 54, 71);
   color: white;
-  border:none
+  border: none;
 }
 
 .sign-up button:hover {
@@ -113,9 +107,7 @@ header {
   cursor: pointer;
 }
 
-
 /* LogIn Section */
-
 .login-body {
   margin-top: 120px;
   display: flex;
@@ -179,7 +171,6 @@ h1 {
   right: 19px;
   cursor: pointer;
 }
-
 
 .log-in-btn {
   width: 110px;
@@ -269,7 +260,6 @@ h1 {
 }
 
 /* Footer Sektion */
-
 footer {
   display: flex;
   justify-content: center;
@@ -302,107 +292,90 @@ footer a:hover {
 }
 
 /************************* RESPONSIVNESS *************************/
-
 @media (max-width: 750px) {
   .login-body {
     padding: 32px 16px;
     width: 90%;
     margin-top: 64px;
   }
-
-
   .login-buttons {
     flex-direction: column;
     margin: 0 auto;
     left: 0;
     gap: 21px;
   }
-
   .log-in-btn {
     width: 180px;
   }
-
   .join-logo {
     width: 64px;
     height: 78px;
     top: 24px;
     left: 32px;
   }
-
   h1 {
     font-size: 47px;
     font-weight: 700;
   }
-
   .email-containter {
     width: 90%;
     margin: 0 auto;
   }
-
   .password-container {
     width: 90%;
     margin: 0 auto;
   }
-
   .login-input {
     width: 100%;
   }
-
   .sign-up {
     height: fit-content;
     position: absolute;
     bottom: 50px;
     display: none;
   }
-
   .sign-up-mobile {
     display: flex;
     position: unset;
     margin: 0 auto;
     margin-top: 40px;
-    width:fit-content;
-    height:fit-content;
+    width: fit-content;
+    height: fit-content;
     border: none;
   }
-  
-  .sign-up-mobile span{
+  .sign-up-mobile span {
     font-size: 20px;
   }
-
-  footer{
+  footer {
     position: unset;
     margin-top: 38px;
     padding-bottom: 32px;
     gap: 10px;
   }
-
-  .log-in-btn{
+  .log-in-btn {
     font-size: 16px;
     font-weight: 700;
   }
-  
-  .guest-log-in-btn{
+  .guest-log-in-btn {
     font-size: 16px;
     font-weight: 700;
   }
-
-  .vector-line{
+  .vector-line {
     width: 77px;
     height: 4px;
   }
-
-  .remember-container{
+  .remember-container {
     margin: 16px 0;
   }
 }
-
 @media (max-width: 580px) {
-  .login-body{width: 85%
+  .login-body {
+    width: 85%;
   }
 }
-
 /************************* DISPLAY CLASSES *************************/
-
 .d-none {
   display: none;
 }
+
+/*# sourceMappingURL=login.css.map */

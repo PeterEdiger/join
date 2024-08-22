@@ -20,7 +20,7 @@
   z-index: 4;
 }
 
-.blue-arrow-left:hover{
+.blue-arrow-left:hover {
   cursor: pointer;
 }
 
@@ -61,15 +61,14 @@
   z-index: 0;
 }
 
-#contact-infos-mobile__eclipse>svg {
+#contact-infos-mobile__eclipse > svg {
   height: 80px;
   width: 80px;
 }
 
-#contact-infos-mobile__eclipse>span {
+#contact-infos-mobile__eclipse > span {
   font-size: 27px;
 }
-
 
 #contact-infos-mobile__name {
   color: #000;
@@ -151,8 +150,7 @@
   position: absolute;
   top: 85%;
   left: 50%;
-  transform: translateX(-50%)
-    /* transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
 }
 
 .add-contact-mobile__slogan-frame {
@@ -167,13 +165,13 @@
 .add-contact-mobile__slogan-header {
   font-size: 47px;
   font-weight: 700;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 .add-contact-mobile__slogan-txt {
   font-size: 20px;
   font-weight: 400;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 .add-contact-mobile__top {
@@ -183,12 +181,10 @@
   border-radius: 20px 20px 0 0;
 }
 
-
 .add-contact-mobile__bottom {
   height: 60%;
   background-color: #FFFFFF;
-  border-radius:0 0 20px 20px;
-
+  border-radius: 0 0 20px 20px;
 }
 
 .blue-stroke-horizontal {
@@ -205,7 +201,6 @@
   margin-left: auto;
 }
 
-
 .input-fields-mobile__add-task {
   margin-top: 100px;
   display: flex;
@@ -215,15 +210,14 @@
   width: 100%;
 }
 
-
 .add-contact__mobile-form {
   width: 90%;
   margin: 0 auto;
-  border: solid transparent
+  border: solid transparent;
 }
 
-.more-options-mobile{
-  display:block;
+.more-options-mobile {
+  display: block;
   position: absolute;
   right: 7px;
   bottom: 105px;
@@ -233,26 +227,25 @@
 }
 
 /************************* EDIT CONTACT TEMPLATE *************************/
-
-.edit-contact{
+.edit-contact {
   position: absolute;
   top: 15px;
   right: 13px;
   z-index: 10;
 }
 
-.edit-contact:hover{
+.edit-contact:hover {
   cursor: pointer;
 }
 
-.delete-contact{
+.delete-contact {
   position: absolute;
   bottom: 15px;
   right: 13px;
   z-index: 10;
 }
 
-.delete-contact:hover{
+.delete-contact:hover {
   cursor: pointer;
 }
 
@@ -268,8 +261,7 @@
   height: 51px;
 }
 
-
-.create-btn__mobile:hover{
+.create-btn__mobile:hover {
   cursor: pointer;
 }
 
@@ -287,22 +279,22 @@
   cursor: auto;
 }
 
-.input-field__mobile:focus{
-  outline: none;  
+.input-field__mobile:focus {
+  outline: none;
   border: solid #29ABE2 1px;
 }
 
-.input-field__mobile::placeholder{
+.input-field__mobile::placeholder {
   font-size: 16px;
 }
 
-.animation-btn{
+.animation-btn {
   height: 30px;
   width: 100px;
-  border: solid orange;  
+  border: solid orange;
   margin: 0 auto;
   margin-top: 25px;
-} 
+}
 
 .form-btns-frame__mobile {
   margin-top: 10px;
@@ -343,44 +335,39 @@
 }
 
 /************************* CONTACT CREATED SUCCESSFULLY *************************/
-.contact-created-successfully{
-  position: absolute; 
-  bottom: 30%; 
-  right: 50%; 
+.contact-created-successfully {
+  position: absolute;
+  bottom: 30%;
+  right: 50%;
   transform: translateX(50%);
   z-index: 10;
 }
 
-
 /************************* MOBILE ELEMENTES *************************/
-.mobile-add-contact-btn{
+.mobile-add-contact-btn {
   display: none;
 }
 
-.mobile-add-contact-btn:hover{
+.mobile-add-contact-btn:hover {
   cursor: pointer;
 }
 
-
-.more-options-circle:hover{
-cursor: pointer;
+.more-options-circle:hover {
+  cursor: pointer;
 }
 
 /************************* TRANSITIONS *************************/
-
 @keyframes slideinFromButtom {
   from {
     transform: translate(-50%, 50%);
   }
-
   to {
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-} 
-
-.add-contact-transition__mobile{
+}
+.add-contact-transition__mobile {
   animation-name: slideinFromButtom;
-  animation-duration: 0.5s; 
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
 }
 
@@ -388,32 +375,27 @@ cursor: pointer;
   from {
     transform: translate(-50%, -50%);
   }
-
   to {
     transform: translate(-50%, 200%);
   }
-  
 }
-
-.add-contact-transition__remove{
+.add-contact-transition__remove {
   animation-name: slideAwayToButtom;
-  animation-duration: 1.5s; 
+  animation-duration: 1.5s;
   animation-timing-function: ease-out;
 }
 
-@keyframes contactAdded{
+@keyframes contactAdded {
   from {
     transform: translate(50%, 250%);
   }
-
   to {
     transform: translate(50%, 0);
   }
 }
-
-.succesfully-created-buttom-to-top{
+.succesfully-created-buttom-to-top {
   animation-name: contactAdded;
-  animation-duration: 0.5s; 
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
 }
 
@@ -421,19 +403,15 @@ cursor: pointer;
   from {
     transform: translate(50%, 0);
   }
-
   to {
     transform: translate(50%, 500%);
   }
 }
-
-.succesfully-created-top-to-bottom{
+.succesfully-created-top-to-bottom {
   animation-name: contactAddedToBottom;
-  animation-duration: 0.6s; 
+  animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-
-
 
 /************************* DISPLAY CLASSES *************************/
 .d-none {
@@ -442,15 +420,16 @@ cursor: pointer;
 
 /************************* RESPONSINESS *************************/
 @media (max-width: 1000px) {
-  .mobile-add-contact-btn{
+  .mobile-add-contact-btn {
     display: block;
   }
 }
-
 @media (max-width: 414px) {
-  .add-contact-frame-mobile{
+  .add-contact-frame-mobile {
     width: 95%;
     height: 98%;
     z-index: 999;
   }
 }
+
+/*# sourceMappingURL=contacts_mobile.css.map */

@@ -1,10 +1,10 @@
+@charset "UTF-8";
 /************************* GLOBAL SELECTORS *************************/
 @font-face {
   font-family: "Inter";
   /* Gewünschter Name */
   src: url("../assets/fonts/inter-font.ttf");
 }
-
 body {
   background-color: #F6F7F8;
   margin: 0;
@@ -21,7 +21,7 @@ a {
 }
 
 a:focus {
-  outline: 0
+  outline: 0;
 }
 
 a:link,
@@ -49,7 +49,7 @@ a:visited {
 }
 
 /************************* SIGN-UP-FRAME *************************/
-.sign-up-form{
+.sign-up-form {
   width: 100%;
 }
 
@@ -76,7 +76,6 @@ a:visited {
   padding: 48px 88px;
   flex-direction: column;
   align-items: center;
-
   border-radius: 30px;
   box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
 }
@@ -155,7 +154,7 @@ a:visited {
   align-items: center;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   width: 16px;
   height: 16px;
 }
@@ -229,10 +228,7 @@ footer a {
   font-weight: 400;
 }
 
-
-
 /************************* RESPONSIVNESS *************************/
-
 @media (max-width: 1017px) {
   #join-logo-sign-up {
     margin-top: 37px;
@@ -240,64 +236,51 @@ footer a {
     width: 64px;
     height: 78px;
   }
-
   #sign-up-frame-wrapper {
     margin-top: 51px;
   }
 }
-
 @media (max-width: 750px) {
   #sign-up-frame {
     box-sizing: content-box;
     padding: 32px 0;
   }
-
-
   .sign-up-header {
     font-size: 47px;
   }
-
   .blue-storke {
     width: 88px;
   }
-
   .input-field-box {
     width: 90%;
   }
-
   #back-arrow-blue {
     top: 9px;
     left: -91px;
   }
-
   #button-sign-up {
     width: 180px;
     height: 51px;
     padding: 4px 0px;
   }
-
   #sign-up-button-text {
     font-size: 16px;
   }
-  
-  footer{
+  footer {
     position: unset;
     margin-top: 38px;
     padding-bottom: 32px;
   }
 }
-
 @media (max-width: 500px) {
-  #sign-up-frame{
+  #sign-up-frame {
     width: 90%;
   }
-
   #back-arrow-blue {
     top: 9px;
     left: -48px;
   }
 }
-
 /************************* TRANSITIONS ANIMATIONS *************************/
 .grey-overlay {
   background-color: rgba(0, 0, 0, 0.2);
@@ -331,17 +314,16 @@ footer a {
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-
 @keyframes slideInFromBottom {
   0% {
     transform: translate(50%, 700%);
   }
-
   30% {
     transform: translate(50%, -50%);
   }
-
   100% {
     transform: translate(50%, -50%);
   }
 }
+
+/*# sourceMappingURL=sign_up.css.map */

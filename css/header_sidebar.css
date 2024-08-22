@@ -1,11 +1,10 @@
+@charset "UTF-8";
 /************************* GLOBAL SELECTORS *************************/
-
 @font-face {
   font-family: "inter";
   /* Gewünschter Name */
   src: url("../assets/fonts/inter-font.ttf");
 }
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -35,7 +34,7 @@ a {
   padding: 0 40px 0 348px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 #header-text {
@@ -65,21 +64,21 @@ a {
   height: 56px;
   background-color: white;
   border-radius: 50%;
-  border: solid #2A3647 3px
+  border: solid #2A3647 3px;
 }
 
-#circle:hover{
+#circle:hover {
   cursor: pointer;
 }
 
 .user-initials {
   font-size: 24px;
-  color:#29ABE2;
-  font-weight: 700;  
+  color: #29ABE2;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 /************************* LEGAL NOTICE BUBBLE *************************/
@@ -102,18 +101,18 @@ a {
   align-items: flex-start;
 }
 
-.legal-notice-bubble a:hover{
-  color: #CDCDCD
+.legal-notice-bubble a:hover {
+  color: #CDCDCD;
 }
 
-.legal-notice-bubble a{
+.legal-notice-bubble a {
   font-size: 16px;
   color: #FFFFFF;
   font-family: inter;
   font-weight: 500;
 }
-/************************* SIDEBAR *************************/
 
+/************************* SIDEBAR *************************/
 #sidebar {
   position: fixed;
   left: 0;
@@ -131,10 +130,10 @@ a {
 }
 
 #sidebar-tabs {
-  color: #A8A8A8
+  color: #A8A8A8;
 }
 
-#sidebar-tabs>a {
+#sidebar-tabs > a {
   text-decoration: none;
   color: #A8A8A8;
 }
@@ -164,13 +163,13 @@ a {
   align-self: stretch;
 }
 
-#legal-notice>a:hover {
+#legal-notice > a:hover {
   color: #29ABE2;
   cursor: pointer;
   font-weight: bold;
 }
 
-#legal-notice>a {
+#legal-notice > a {
   color: #A8A8A8;
   text-decoration: none;
 }
@@ -226,35 +225,31 @@ a {
 /************************* RESPONSIVNESS *************************/
 @media (max-width: 975px) {
   #sidebar {
-    display: none
+    display: none;
   }
 }
-
 @media (min-width: 975px) {
   #nav-footer {
-    display: none
+    display: none;
   }
 }
-
 @media (min-width: 717px) {
   #logo-join-header {
     display: none;
   }
 }
-
 @media (max-width: 717px) {
   #header {
     padding: 20px 16px;
   }
 }
-
-@media(max-width: 420px) {
+@media (max-width: 420px) {
   #nav-footer {
     padding: 0;
   }
-
   .footer-square {
     width: 73px;
   }
-
 }
+
+/*# sourceMappingURL=header_sidebar.css.map */

@@ -19,7 +19,7 @@ button {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0; 
+  right: 0;
   left: 0;
 }
 
@@ -44,13 +44,12 @@ button {
   z-index: 0;
 }
 
-
-#contact-infos__eclipse>svg {
+#contact-infos__eclipse > svg {
   height: 120px;
   width: 120px;
 }
 
-#contact-infos__eclipse>span {
+#contact-infos__eclipse > span {
   font-family: Inter;
   font-size: 47px;
   font-style: normal;
@@ -76,17 +75,15 @@ button {
   overflow-y: auto;
   max-height: 100vh;
   scrollbar-width: thin;
-  box-shadow: 4px 3px 4px 0px rgba(0, 0, 0, 0.10);
-
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #A8A8A8;
-    height: 50%;
-    border-radius: 8px;
-  }
+  box-shadow: 4px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+#contacts-frame::-webkit-scrollbar {
+  width: 6px;
+}
+#contacts-frame::-webkit-scrollbar-thumb {
+  background-color: #A8A8A8;
+  height: 50%;
+  border-radius: 8px;
 }
 
 #contacts-button-wrapper {
@@ -150,7 +147,6 @@ button {
 }
 
 /************************* LEFT-SECTION-CONTACT-FRAME *************************/
-
 .contact-frame {
   display: flex;
   width: 352px;
@@ -219,12 +215,10 @@ button {
 }
 
 .active-tab-name {
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 /************************* RIGHT SIDE CONTACTS *************************/
-
-
 #contacts-slogan-box {
   position: relative;
   top: 45px;
@@ -238,8 +232,6 @@ button {
 .blue-stroke__horizontal {
   display: none;
 }
-
-.blue-stroke__vertical {}
 
 #contacts-slogan {
   color: #000;
@@ -274,8 +266,6 @@ button {
   align-items: center;
   gap: 54px;
 }
-
-
 
 #contact-infos__name-edit-delete {
   display: flex;
@@ -313,11 +303,11 @@ button {
 }
 
 #contact-infos__delete:hover span {
-  color: #007CEE
+  color: #007CEE;
 }
 
 #contact-infos__delete:hover #delete_2 {
-  fill: #007CEE
+  fill: #007CEE;
 }
 
 #contact-infos__edit:hover {
@@ -334,9 +324,8 @@ button {
 
 #contact-infos__edit #contact-infos__edit:hover {
   cursor: pointer;
-  color: #007CEE
+  color: #007CEE;
 }
-
 
 #contact-infos__edit-txt,
 #contact-infos__delete-txt {
@@ -422,7 +411,6 @@ button {
   cursor: pointer;
 }
 
-
 #close-x__wrapper {
   display: flex;
   justify-content: flex-end;
@@ -443,8 +431,6 @@ button {
   background-color: #f1eeee;
   cursor: pointer;
 }
-
-
 
 .add-contact-frame__left {
   display: flex;
@@ -481,14 +467,14 @@ button {
   font-family: Inter;
   font-weight: 700;
   font-size: 61px;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 .left-content__slogan {
   font-family: Inter;
   font-weight: 400;
   font-size: 27px;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 #blue-stroke {
@@ -517,7 +503,6 @@ button {
   /* border: solid orange; */
   margin: 0 auto;
 }
-
 
 .add-contact__form {
   width: 60%;
@@ -581,7 +566,6 @@ button {
   gap: 24px;
 }
 
-
 .cancel-btn {
   width: 126px;
   height: 56px;
@@ -641,14 +625,12 @@ button {
   gap: 8px;
 }
 
-
 .create-btn__txt {
   font-size: 21px;
   font-weight: 700;
   font-family: Inter;
   color: #FFFFFF;
 }
-
 
 .input-field__img-placing {
   position: absolute;
@@ -657,9 +639,7 @@ button {
   right: 18px;
 }
 
-
 /************************* EDIT CONTACT *************************/
-
 .delete-btn {
   width: 126px;
   height: 56px;
@@ -683,43 +663,34 @@ button {
   from {
     transform: translateX(200%);
   }
-
   to {
     transform: translateX(0%);
   }
 }
-
 @keyframes add-contact {
   from {
-    transform: translate(200%, -50%)
+    transform: translate(200%, -50%);
   }
-
   to {
     transform: translate(50%, -50%);
   }
 }
-
 @keyframes successRightToLeft {
   from {
     transform: translateX(500%);
   }
-
   to {
     transform: translateX(50%);
   }
 }
-
 @keyframes successLeftToRight {
   from {
     transform: translateX(50%);
   }
-
   to {
     transform: translateX(500%);
   }
 }
-
-
 .transition {
   animation-name: slidein;
   animation-duration: 0.4s;
@@ -750,7 +721,7 @@ button {
 }
 
 .margin-auto {
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .no-hover {
@@ -759,97 +730,73 @@ button {
 }
 
 /************************* RESPONSIVNESS *************************/
-@media(max-width: 1370px) {
+@media (max-width: 1370px) {
   #sidebar {
     display: none;
   }
-
   #nav-footer {
     display: flex;
   }
-
   #contacts-frame {
     /* width: 100%; */
     margin-left: 0;
   }
-
   #header {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
     z-index: 5;
   }
-
 }
-
-
-
-@media(max-width: 1300px) {
+@media (max-width: 1300px) {
   #contacts-slogan-box {
     flex-direction: column;
     gap: 8px;
     top: -20px;
     align-items: flex-start;
   }
-
   #contacts-frame {
     width: 410px;
     padding-left: 18px;
   }
-
   #contacts-slogan {
     font-size: 54px;
   }
-
   .add-contact-frame {
     width: 90%;
   }
-
   .add-contact__img-placeholder {
     width: 28%;
   }
-
   .contact-infos-box {
     top: 180px;
   }
-
   .blue-stroke__horizontal {
     display: block;
   }
-
   .blue-stroke__vertical {
     display: none;
   }
 }
-
-
 @media (max-width: 1186px) {
   .add-contact__left-content {
     padding-left: 20px;
   }
 }
-
-
 @media (max-width: 1000px) {
   #contacts-slogan-box {
     display: none;
   }
-
   #contacts-frame {
     width: 100%;
   }
-
   #contacts-frame {
     margin-top: 29px;
-
   }
-
   #contacts-button-wrapper {
     display: none;
   }
-
   #header {
     padding-left: 40px;
   }
-
   .mobile-add-contact-btn {
     display: block;
     position: absolute;
@@ -857,7 +804,6 @@ button {
     bottom: 109px;
     z-index: 5;
   }
-
   .more-options-circle {
     display: block;
     position: absolute;
@@ -866,34 +812,28 @@ button {
     z-index: 5;
   }
 }
-
-
 @media (max-width: 714px) {
   #header-text {
     display: none;
   }
-
   #help-icon-box {
     width: 100%;
     justify-content: space-between;
   }
-
   #icon-help {
     justify-self: flex-end;
   }
 }
-
-
 @media (max-width: 430px) {
   /* #contacts-btn {
     display: none;
   } */
-
   /* #contacts-button-wrapper {
     display: none;
   } */
-
   /* .letter0 {
     margin-top: 10px
   } */
 }
+
+/*# sourceMappingURL=contacts.css.map */

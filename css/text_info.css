@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   width: 100vw;
@@ -24,18 +25,21 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .arrow-img {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
   cursor: pointer;
 }
+
 .arrow-img:hover {
   width: 34px;
   height: 34px;
   background-color: rgb(228, 224, 224);
   border-radius: 20px;
 }
+
 h1 {
   color: #000;
   font-family: Inter;
@@ -45,6 +49,7 @@ h1 {
   line-height: 120%;
   margin-block-start: 0;
 }
+
 h2 {
   color: #000;
   font-family: Inter;
@@ -55,6 +60,7 @@ h2 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
 .text-field {
   color: #000;
   font-family: Inter;
@@ -63,6 +69,7 @@ h2 {
   font-weight: 400;
   line-height: 120%; /* 19.2px */
 }
+
 .second-line {
   display: flex;
   flex-direction: column;
@@ -87,7 +94,8 @@ h2 {
 }
 
 /* legal notice extras was nicht in privacy policy benötigt wurde */
-
 .blue {
   color: #28abe2;
 }
+
+/*# sourceMappingURL=text_info.css.map */

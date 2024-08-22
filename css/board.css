@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   background: #f6f7f8;
@@ -172,7 +173,6 @@ body {
 }
 
 /* drag and drop fläche */
-
 .drag-area {
   display: flex;
   min-height: 65vh;
@@ -266,7 +266,6 @@ body {
 }
 
 /* progressbar */
-
 .progressbar {
   display: flex;
   flex-direction: column;
@@ -339,7 +338,6 @@ body {
   padding-right: 40px;
 }
 
-
 .task-card-headline {
   color: #000;
   font-family: Inter;
@@ -356,13 +354,12 @@ body {
 }
 
 .task-close-X:hover {
-  background-color: rgb(220 217 217);
+  background-color: rgb(220, 217, 217);
   border-radius: 20px;
   cursor: pointer;
 }
 
 /* mittlere sektion */
-
 .middle-task-body {
   display: flex;
   justify-content: space-between;
@@ -373,7 +370,6 @@ body {
 }
 
 /* linke hälfte */
-
 .left-side {
   display: flex;
   flex-direction: column;
@@ -625,7 +621,6 @@ body {
 } 
 
 /* für addTask ab hier footer bereich */
-
 .add-task-footer {
   display: flex;
   justify-content: space-between;
@@ -693,7 +688,6 @@ body {
 }
 
 /* dem Board die addTask optik hier einzusehen */
-
 .full-task-body {
   position: fixed;
   top: 0;
@@ -702,16 +696,16 @@ body {
   height: 100%;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0; 
-  transition: opacity 0.5s ease-in-out; 
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .full-task-body.open {
-  opacity: 1; 
+  opacity: 1;
 }
 
 :focus-visible {
-  outline: rgb(40,171,226) auto 1px;
+  outline: rgb(40, 171, 226) auto 1px;
 }
 
 .task-card {
@@ -724,7 +718,7 @@ body {
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
-  transition: left 0.5s ease-in-out; 
+  transition: left 0.5s ease-in-out;
   overflow-y: auto;
   overflow-x: hidden;
   max-width: 1200px;
@@ -732,10 +726,8 @@ body {
 }
 
 .full-task-body.open .task-card {
-  left: 50%; 
+  left: 50%;
 }
-
-
 
 .task-card::-webkit-scrollbar {
   width: 4px;
@@ -773,12 +765,11 @@ body {
   overflow: auto;
 }
 
-
 .card-container {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #29292963;
+  background-color: rgba(41, 41, 41, 0.3882352941);
   z-index: 10000;
   top: 0px;
   left: 0px;
@@ -877,12 +868,11 @@ p {
 }
 
 /***** Ab hier wird die Edit task bereich designt *****/
-
 .edit-container {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #29292963;
+  background-color: rgba(41, 41, 41, 0.3882352941);
   z-index: 10001;
   top: 0;
   left: 0;
@@ -933,7 +923,6 @@ p {
 }
 
 /* contact area */
-
 .contact-area {
   width: 100%;
   height: 180px;
@@ -963,7 +952,7 @@ p {
   align-items: center;
   width: 100%;
   padding: 8px 18px;
-  font-family: 'inter';
+  font-family: "inter";
   font-size: 20px;
 }
 
@@ -1018,3 +1007,5 @@ p {
   gap: 32px;
   padding: 10px;
 }
+
+/*# sourceMappingURL=board.css.map */
