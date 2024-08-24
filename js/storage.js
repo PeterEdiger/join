@@ -14,16 +14,6 @@ async function setItem(key, value) {
     .then(res => res.json());
 }
 
-async function getRemote() {
-  let myItems = await getItem("board_key");
-  let parsedItem = JSON.parse(myItems);
-  parsedItem.shift()
-  console.log(parsedItem);
-  setItem("board_key", parsedItem)
-  
-}
-
-// getRemote();
 
 /**
  * Takes a key, creates the right url
