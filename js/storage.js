@@ -15,6 +15,23 @@ async function setItem(key, value) {
 }
 
 
+let cardsData = {
+  id: taskId,
+  column: "todo",
+  title: title.value,
+  description: description.value,
+  date: date.value,
+  category: category,
+  priorityImg: "assets/img/board/prio_green.png",
+  priorityText: "Low",
+  contacts: contactData,
+  subtasks: subtasks,
+  createdSubtasks: subtasksLength,
+  checkedSubtasks: checkedSubtasks,
+  progressbar: progressPercentage,
+}
+
+
 /**
  * Takes a key, creates the right url
  * returns response as a json
