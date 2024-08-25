@@ -103,8 +103,7 @@ body {
   cursor: pointer;
 }
 
-.all-columns-wrapper {
-  border: solid red; 
+.drag-drop-headline {
   display: flex;
   padding: 0px 64px;
   justify-content: space-evenly;
