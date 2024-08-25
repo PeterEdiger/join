@@ -16,20 +16,21 @@ async function setItem(key, value) {
 
 
 let cardsData = {
-  id: taskId,
+  id: 0,
   column: "todo",
-  title: title.value,
-  description: description.value,
-  date: date.value,
-  category: category,
+  title: "",
+  description: "",
+  date: 0,
+  category: "",
   priorityImg: "assets/img/board/prio_green.png",
   priorityText: "Low",
   contacts: contactData,
-  subtasks: subtasks,
-  createdSubtasks: subtasksLength,
+  subtasks: "",
+  createdSubtasks: 0,
   checkedSubtasks: checkedSubtasks,
-  progressbar: progressPercentage,
+  progressbar: 0,
 }
+
 
 
 /**
