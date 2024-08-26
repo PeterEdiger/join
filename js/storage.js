@@ -27,7 +27,7 @@ let cardsData = {
   contacts: contactData,
   subtasks: "",
   createdSubtasks: 0,
-  checkedSubtasks: checkedSubtasks,
+  checkedSubtasks: "",
   progressbar: 0,
 }
 

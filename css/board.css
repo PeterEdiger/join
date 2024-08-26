@@ -175,10 +175,10 @@ body {
 /* drag and drop fläche */
 .drag-area {
   display: flex;
+  flex-direction: column;
   min-height: 65vh;
   min-width: fit-content;
   justify-content: flex-start;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
   align-self: stretch;
@@ -195,7 +195,8 @@ body {
 }
 
 .task {
-  width: 252px;
+  width: 100%;
+  align-self: center;
   padding: 16px;
   justify-content: center;
   border-radius: 24px;

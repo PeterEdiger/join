@@ -50,12 +50,19 @@
             <span>To do</span>
             <div class="addTask">
               <img class="black-plus" src="./assets/img/board/plus_sign_black.png" alt="plus img">
-              <img class="blue-plus" src="./assets/img/board/plus_sign_blue.png" alt="blue plus" onclick="addTask('todo')">
+              <img class="blue-plus" src="./assets/img/board/plus_sign_blue.png" alt="blue plus"
+                onclick="addTask('todo')">
             </div>
           </div>
+          <!-- Cards going in here -->
           <div class="drag-area" id="todo" ondrop="moveTo('todo')" ondragleave="removeHighlight('todo')"
-            ondragover="allowDrop(event); highlight('todo')"></div>
+            ondragover="allowDrop(event); highlight('todo')">
+            <!-- Cards going in here -->
+
+          </div>
+
         </div>
+
         <div class="column-area">
           <div class="flex">
             <span>In progress</span>
@@ -173,7 +180,8 @@
                   <div class="task-contact-input-area" onclick="changeInputImg()">
                     <input class="subtask-main-input" autocomplete="off" id="input-subtasks" type="text"
                       placeholder="Add new subtasks">
-                    <img id="subtask-plus-img" class="Assigned-img" src="./assets/img/board/plus_sign_add_task.png" alt="plus">
+                    <img id="subtask-plus-img" class="Assigned-img" src="./assets/img/board/plus_sign_add_task.png"
+                      alt="plus">
                     <div class="subtask-comment">
                       <img id="subtask-close-img" class="Assigned-img-subtask px24 d-none"
                         src="./assets/img/board/close.png" onclick="deleteSubtaskInput()">
