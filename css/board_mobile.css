@@ -44,13 +44,13 @@
     width: 100%;
   }
 
-  .drag-drop-headline {
+  .all-columns-wrapper {
     flex-direction: column;
     padding: 0;
     padding-bottom: 128px;
   }
 
-  .each_drag_drop {
+  .column-area {
     padding-bottom: 64px;
     width: 100%;
   }
@@ -425,7 +425,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 1350px) {
-  .drag-drop-headline {
+  .all-columns-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
@@ -433,7 +433,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 1060px) {
-  .drag-drop-headline {
+  .all-columns-wrapper {
     gap: 40px;
     padding-bottom: 124px;
     justify-content: center;
@@ -447,17 +447,17 @@
     padding-right: 12px;
     width: 100%;
   }
-  
+
   .board-search {
     position: absolute;
     top: 70%;
     width: 100%;
   }
-  
+
   .board-active input {
     width: 100%;
   }
-  
+
   .start-position {
     width: 100%;
     left: 0;
