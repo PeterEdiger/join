@@ -20,90 +20,63 @@
   <!-- Single Card smallest Card showing up in the columns-->
 
 
-  <div data-id="1724228400491" draggable="true" ondragstart="startDragging(1724228400491)" class="task"
-    onclick="openTaskCard(1724228400491)">
-    <div>
-      <img src="./assets/img/board/user-story.png">
-    </div>
-    <div>
-      <b style="word-break: break-word;">Start workout sheudle</b>
-    </div>
-    <div>
-      <p class="description-font"></p>
-    </div>
-    <div class="bottom-task">
-      <div class="d-flex">
-        <div class="contact-frame contact-frame1">
-          <div class="name-circle-wrapper name-in-circle1">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="21" cy="21" r="20" fill="#9327FF" stroke="white" stroke-width="2"></circle>
-            </svg>
-            <span class="initials initials1">P</span>
-          </div>
-        </div>
-      </div>
-      <img id="priority" src="./assets/img/board/Prio-yellow.png" alt="Priority" class="prio-position">
-    </div>
-  </div>
-
-
-  <!-- Complete Card -->
-
   <div class="completeCard">
     <div class="taskcard-head">
-      <img class="card-category-img" src="./assets/img/board/user-story.png">
-      <img class="task-close-X" src="./assets/img/board/close.png" onclick="closeTaskCard()">
+        <img class="card-category-img" src="./assets/img/board/technical-task.png">
+        <img class="task-close-X" src="./assets/img/board/close.png" onclick="closeTaskCard()">
     </div>
     <div class="title-card">
-      <p>Start workout sheudle</p>
+        <p>Learn arrow function</p>
     </div>
     <div class="description-card">
-      <p></p>
+        <p>Finally master arrow functions</p>
     </div>
     <div class="date-card">
-      <p>Due Date: 20.08.2024</p>
+        <p>Due Date: 05.08.2024</p>
     </div>
     <div class="priority-card">
-      <p>Priority:</p>
-      <p>Medium</p>
-      <img id="priority" src="./assets/img/board/Prio-yellow.png" alt="Priority">
+        <p>Priority:</p>
+        <p>Medium</p>
+        <img id="priority" src="./assets/img/board/Prio-green.png" alt="Priority">
     </div>
     <div class="contact-card">
-      <p>Assigned to:</p>
-      <div class="d-flex">
-        <div>
-          <div class="icon-name-pair">
+        <p>Assigned to:</p>
+        <div class="d-flex">
             <div>
-              <div class="contact-frame contact-frame1">
-                <div class="name-circle-wrapper name-in-circle1">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" fill="#9327FF" stroke="white" stroke-width="2">
-                    </circle>
-                  </svg>
-                  <span class="initials initials1">P</span>
-                </div>
-              </div>
-            </div>
-            <div>Peter</div>
-          </div>
+    <div class="icon-name-pair">
+        <div>
+<div class="contact-frame contact-frame0">
+    <div class="name-circle-wrapper name-in-circle0">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21" cy="21" r="20" fill="#FF7A00" stroke="white" stroke-width="2"></circle>
+        </svg>
+        <span class="initials initials0">AB</span>
+    </div>
+</div></div>
+        <div>Andreas Bauer</div>
+    </div>
+</div>
         </div>
-      </div>
     </div>
     <div class="subtask-card-container">
-      <p>Subtasks: </p>
-
+        <p>Subtasks: </p>
+        
+<div class="subtask-card">
+    <img id="subtask-checkbox" class="subtask-image" src="./assets/img/board/checkForCard.png" onclick="toggleSubtask(this, 1723550706491, 0)">
+    <p>start on Monday</p>
+</div>
     </div>
     <div class="subtaskcard-bottom-footer">
-      <div class="subtaskcard-footer-delete" onclick="deleteTaskCard(1724228400491)">
-        <img id="black-trash" src="./assets/img/board/trashforsubtasks.png">
-        <p>Delete</p>
-      </div>
-      <div class="subtaskcard-footer-edit" onclick="editTaskCard(1724228400491)">
-        <img id="black-edit" src="./assets/img/board/editforSubtask.png">
-        <p>Edit</p>
-      </div>
+        <div class="subtaskcard-footer-delete" onclick="deleteTaskCard(1723550706491)">
+            <img id="black-trash" src="./assets/img/board/trashforsubtasks.png">
+            <p>Delete</p>
+        </div>
+        <div class="subtaskcard-footer-edit" onclick="editTaskCard(1723550706491)">
+            <img id="black-edit" src="./assets/img/board/editforSubtask.png">
+            <p>Edit</p>
+        </div>
     </div>
-  </div>
+</div>
 
 
   <!-- Edit Card -->

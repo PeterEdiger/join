@@ -21,15 +21,16 @@ let cardsData = {
   title: "",
   description: "",
   date: 0,
-  category: "",
+  categoryImg: "",
   priorityImg: "assets/img/board/prio_green.png",
   priorityText: "Low",
   contacts: contactData,
   subtasks: "",
   createdSubtasks: 0,
-  checkedSubtasks: "",
+  checkedSubtasks: 0,
   progressbar: 0,
 }
+
 
 
 
