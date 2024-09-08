@@ -18,39 +18,48 @@ let todos = [
 
 let currentDraggedElement;
 
+
 /**
- * Gets called onload. 
- * Filters todos JSON array. Renders the todo in appropriate field.
- */
+ * Gets called onload and on changes.
+ * Filters todos JSON array.
+ * Cleans the fields.
+ * Renders todos into the apropriate fields.
+*/
 function updateHTML() {
-  // returns an array with items meeting filter creteria 
-  let open = todos.filter(todo => todo['category'] == 'open');
-  document.getElementById('open').innerHTML = '';
-  for (let index = 0; index < open.length; index++) {
-    const element = open[index];
-    document.getElementById('open').innerHTML += generateTodoHTML(element);
-  }
-
-
-  let closed = todos.filter(t => t['category'] == 'closed');
-  document.getElementById('closed').innerHTML = '';
-  for (let index = 0; index < closed.length; index++) {
-    const element = closed[index];
-    document.getElementById('closed').innerHTML += generateTodoHTML(element);
+  let areaNames = ["open", "closed"];
+  for (let i = 0; i < areaNames.length; i++) {
+    let fieldName = areaNames[i];
+    document.getElementById(fieldName).innerHTML = '';
+    let currentField = todos.filter(todo => todo['category'] == fieldName);
+    for (let index = 0; index < currentField.length; index++) {
+      const todo = currentField[index];
+      document.getElementById(fieldName).innerHTML += generateTodoHTML(todo);
+    }
   }
 }
 
 
+/**
+ * @param {number} id
+ *
+ */
 function startDragging(id) {
   currentDraggedElement = id;
 }
 
 
-function generateTodoHTML(element) {
-  return `<div draggable="true" ondragstart="startDragging(${element['id']})" class="todo">${element['title']}</div>`;
+/**
+ * @param {object} todo single todo object holding todo informations. 
+ */
+function generateTodoHTML(todo) {
+  return `<div draggable="true" ondragstart="startDragging(${todo['id']})" class="todo">${todo['title']}</div>`;
 }
 
 
+/**
+ * @param {Event} ev event Object 
+ *
+ */
 function allowDrop(ev) {
   ev.preventDefault();
 }

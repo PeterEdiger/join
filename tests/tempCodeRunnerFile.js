@@ -1,0 +1,1 @@
+  let openToDoes = todos.filter(todo => todo['category'] == 'open');
