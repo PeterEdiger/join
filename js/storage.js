@@ -14,16 +14,25 @@ async function setItem(key, value) {
     .then(res => res.json());
 }
 
-async function getRemote() {
-  let myItems = await getItem("board_key");
-  let parsedItem = JSON.parse(myItems);
-  parsedItem.shift()
-  console.log(parsedItem);
-  setItem("board_key", parsedItem)
-  
+
+let cardsData = {
+  id: 0,
+  column: "todo",
+  title: "",
+  description: "",
+  date: 0,
+  categoryImg: "",
+  priorityImg: "assets/img/board/prio_green.png",
+  priorityText: "Low",
+  contacts: contactData,
+  subtasks: "",
+  createdSubtasks: 0,
+  checkedSubtasks: 0,
+  progressbar: 0,
 }
 
-// getRemote();
+
+
 
 /**
  * Takes a key, creates the right url
